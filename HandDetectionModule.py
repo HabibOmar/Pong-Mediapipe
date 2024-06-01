@@ -13,5 +13,4 @@ class MediapipeLandmark:
         if results.multi_hand_landmarks!=None:
             for hand in results.multi_hand_landmarks:
                 val=int(hand.landmark[8].x*1366)
-                print(val)
         return abs(val)
