@@ -123,7 +123,7 @@ while run:
             DeltaX = -DeltaX
             DeltaX, DeltaY = increaseBallSpeed(DeltaX, DeltaY)
 
-    # If ball collides with upper or lower edge, reflect along the invert the deltay
+    # If ball collides with upper or lower edge, reflect along the invert the deltaY
     if yPos >= 695 or yPos <= 10:
         DeltaY = -DeltaY
 
