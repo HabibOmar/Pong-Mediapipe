@@ -107,7 +107,7 @@ while run:
     cv2.putText(background, 'Round: ' + str(rounds), (575, 35), cv2.FONT_HERSHEY_PLAIN, 1, scoreColor, 2)
 
     # Creates the ball and initiates its movement
-    if ball == True:
+    if ball:
         cv2.circle(background, (xPos, yPos), BallRadius, (255, 255, 255), -1)
         yPos += DeltaY
         xPos += DeltaX
